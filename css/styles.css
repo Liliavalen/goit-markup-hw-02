@@ -10,8 +10,7 @@
 }
 
 body {
-    background-color: var(--title-second-color);
-    font-family: Roboto;
+    font-family: Roboto, sens-serif;
     color: var(--primary-text-color);
 }
 
@@ -19,6 +18,7 @@ body {
 
         /*-----------Heder-logo---------*/
 .caption-logo{
+    font-family: Raleway;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -33,7 +33,6 @@ body {
         color: var(--accent-color);
 }
 .caption-logo.current,
-.caption-logo:hover,
 .caption-logo:focus {
         color: var(--accent-color);
  }
@@ -63,24 +62,7 @@ body {
 
         /*-----------Heder-contact---------*/
 
-.caption-mail{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.caption-mail.current,
-.caption-mail:hover,
-.caption-mail:focus {
-    color: var(--accent-color);
-}
-
-.caption-tel{
+.caption-adr{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -91,9 +73,9 @@ body {
     cursor: pointer;     
 }
 
-.caption-tel.current,
-.caption-tel:hover,
-.caption-tel:focus {
+.caption-adr.current,
+.caption-adr:hover,
+.caption-adr:focus {
     color: var(--accent-color);
 }
 
@@ -102,20 +84,10 @@ body {
        /*-----------Hero---------*/
 
  .hero{
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
     background-color: var(--first-fon-color);
  }
 
 .hero-title{
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -144,7 +116,7 @@ body {
 .hero-button.current,
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--title-color);
+    box-shadow: 10px, var(--first-fon-color);
 }
   
         /*-----------features---------*/
@@ -159,7 +131,7 @@ body {
 }
 .features-text{
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
@@ -207,6 +179,7 @@ body {
 }
 
 .contacts-logo{
+    font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -217,7 +190,6 @@ body {
 }
 
 .contacts-logo.current,
-.contacts-logo:hover,
 .contacts-logo:focus {
     color: var(--accent-color);
 }
@@ -229,35 +201,19 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--title-second-color);
+    color: rgba(255, 255, 255, 0.6);;
     text-decoration: none;
     cursor: pointer;
 }
 
-.address-top.current,
-.address-top:hover,
-.address-top:focus {
+.contacts-adr.current,
+.contacts-adr:hover,
+.contacts-adr:focus {
     color: var(--accent-color);
 }
 
-.contacts-mail{
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.contacts-tel{
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    cursor: pointer;
+.contacts-citi{
+    color: var(--title-second-color);
 }
 
 /*---------------------portfolio------------------*/
@@ -266,15 +222,12 @@ body {
 .gallery-button {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.62px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
 
-    width: 112px;
-    height: 38px;
-  
     background-color: var(--second-fon-color);
     color: var(--title-color);
     cursor: pointer;
@@ -289,7 +242,10 @@ body {
 
         /*----------галерея робіт----------*/
 
-.gallery-link{
+.heading{
+    opacity: 0;
+}
+        .gallery-link{
     text-decoration: none;
 }
 
